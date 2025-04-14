@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+    themes: light --default;    
+}
+
+:root {
+    --color-primary: #F04248;
+}
+
+@font-face {
+    font-family: 'Yekan';
+    src: local('Yekan'), url(./assets/fonts/Yekan.ttf) format('truetype');
+}
+
+@theme {
+    --font-yekan: "Yekan", sans-serif;
+}
+
