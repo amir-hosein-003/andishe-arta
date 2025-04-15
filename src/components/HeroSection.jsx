@@ -2,30 +2,28 @@ import { Icon } from "@iconify/react"
 import CheckBox from "../icons/CheckBox"
 
 const HeroSection = () => {
+
+    const lists = [
+        "لورم ایپسوم متن ساختگی با تولید نامفهوم",
+        "لورم ایپسوم متن ساختگی با تولید نامفهوم",
+        "لورم ایپسوم متن ساختگی با تولید نامفهوم",
+        "لورم ایپسوم متن ساختگی با تولید نامفهوم",
+    ]
+
   return (
-    <section className="h-screen flex justify-between flex-col md:flex-row px-20">
+    <section className="h-screen flex justify-between flex-col-reverse md:flex-row px-20 mt-12">
         <div className="h-120 flex flex-col justify-around">
             <div className="flex items-center gap-2">
                 <img src="./src/assets/img/Group-2.png" />
                 <h1 className="text-4xl font-bold">نام آوران اندیشه آرتا</h1>
             </div>
             <ul className="flex flex-col gap-3 text-gray-500">
-                <li className="flex items-center gap-3">
-                    <CheckBox />
-                    لورم ایپسوم متن ساختگی با تولید نامفهوم
-                </li>
-                <li className="flex items-center gap-2">
-                    <CheckBox />
-                    لورم ایپسوم متن ساختگی با تولید نامفهوم
-                </li>
-                <li className="flex items-center gap-2">
-                    <CheckBox />
-                    لورم ایپسوم متن ساختگی با تولید نامفهوم
-                </li>
-                <li className="flex items-center gap-2">
-                    <CheckBox />
-                    لورم ایپسوم متن ساختگی با تولید نامفهوم
-                </li>
+                {lists.map((list, index) => (
+                    <li className="flex items-center gap-3" key={index}>
+                        <CheckBox />
+                        {list}
+                    </li>
+                ))}
             </ul>
             <div>
                 <button className="btn btn-primary">
@@ -44,7 +42,7 @@ const HeroSection = () => {
                 <img src="./src/assets/img/Group-1.png" className="absolute top-50 left-13" />
                 <img src="./src/assets/img/circle.png" className="absolute left-30 top-20" />
             </span>
-            <img src="./src/assets/img/image.png" className="absolute left-28 top-14" />
+            <img src="./src/assets/img/image.png" width={"700"} height={"400"} className="absolute left-28 top-14" />
         </div>
     </section>
   )
