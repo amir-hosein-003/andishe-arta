@@ -23,8 +23,9 @@ const ImgSlider = () => {
 
   return (
     <>
+    <div className="relative p-6 rounded-3xl max-w-5xl mx-auto mt-10">
       {/* نقطه‌های سفارشی سمت چپ  */}
-      <div className="absolute top-45 left-[-25px] z-20 flex flex-col gap-2">
+      <div className="absolute top-43 left-[-25px] z-20 flex flex-col gap-2">
         {images.map((_, index) => (
           <button
             key={index}
@@ -35,7 +36,6 @@ const ImgSlider = () => {
           />
         ))}
       </div>
-    <div className="relative p-6 rounded-3xl max-w-5xl mx-auto mt-10">
 
       {/* اسلایدر */}
       <Swiper
