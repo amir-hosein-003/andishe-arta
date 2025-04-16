@@ -14,7 +14,7 @@ const Products = () => {
         </div>
       </div>
       
-      <div className="flex justify-center mt-10">
+      <div className="flex justify-center my-12">
         <ArrowLDown />
       </div>
       <div className="flex flex-col md:flex-row justify-between gap-10">
@@ -22,15 +22,15 @@ const Products = () => {
         <DetailProduct />
       </div>
 
-      <div className="flex justify-center my-10">
+      <div className="flex justify-center my-12">
         <ArrowRDown />
       </div>
-      <div className="flex flex-col md:flex-row justify-between gap-10">
+      <div className="flex flex-col-reverse md:flex-row justify-between gap-10">
         <DetailProduct />
         <img src="./src/assets/img/image-1.png" width="640px" />
       </div>
 
-      <div className="flex justify-center my-15">
+      <div className="flex justify-center my-12">
         <ArrowLDown />
       </div>
       <div className="flex flex-col md:flex-row justify-between gap-10">

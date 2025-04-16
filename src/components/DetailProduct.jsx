@@ -5,7 +5,7 @@ import Change from "../icons/Change";
 
 const DetailProduct = () => {
   return (
-    <div className=" flex flex-col justify-around">
+    <div className="flex flex-col justify-around">
       <div>
         <h3 className="text-3xl font-semibold mb-6">
           لورم ایپسوم متن ساختگی با تولید
@@ -16,7 +16,7 @@ const DetailProduct = () => {
           نامفهوم از صنعت چاپ، و بااستفاده از طراحان گرافیک است
         </p>
       </div>
-      <div>
+      <div className="mt-8 md:mt-0">
         <ul>
           <li className="flex items-center gap-2 font-bold mb-3">
             <Clock />
@@ -32,7 +32,7 @@ const DetailProduct = () => {
           </li>
         </ul>
       </div>
-      <div>
+      <div className="mt-8 md:mt-0">
         <button className="btn btn-primary">
           اطلاعات بیشتر
           <Icon icon="iconamoon:arrow-left-2" width="24" height="24" />

@@ -36,7 +36,7 @@ const HeroSection = () => {
                 </button>
             </div>
         </div>
-        <div className="w-1/2 relative">
+        <div className="w-full md:w-1/2 relative">
             <span className="absolute left-0">
                 <img src="./src/assets/img/Rectangle.png" width="468px" />
                 <img src="./src/assets/img/Group-1.png" className="absolute top-50 left-13" />
