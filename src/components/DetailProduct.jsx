@@ -37,7 +37,7 @@ const DetailProduct = () => {
           اطلاعات بیشتر
           <Icon icon="iconamoon:arrow-left-2" width="24" height="24" />
         </button>
-        <button className="btn text-primary mr-4">
+        <button className="btn btn-ghost text-primary mr-4">
           مشاوره رایگان
           <Icon icon="iconamoon:arrow-left-2" width="24" height="24" />
         </button>

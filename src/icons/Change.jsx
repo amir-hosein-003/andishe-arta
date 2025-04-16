@@ -3,7 +3,7 @@
 const Airplane = () => {
     return (
       <div>
-        <img src="./src/assets/img/change.png" />
+        <img src="./public/img/change.png" />
       </div>
     )
   }

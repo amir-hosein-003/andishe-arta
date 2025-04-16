@@ -3,7 +3,7 @@
 const ProductBtnIcone = () => {
   return (
     <div>
-      <img src="./src/assets/img/package.svg"/>
+      <img src="./public/img/package.svg"/>
     </div>
   )
 }

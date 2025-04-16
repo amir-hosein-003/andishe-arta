@@ -1,5 +1,6 @@
 import { Icon } from "@iconify/react"
 import CheckBox from "../icons/CheckBox"
+import ImgSlider from "../components/ImgSlider"
 
 const HeroSection = () => {
 
@@ -14,7 +15,7 @@ const HeroSection = () => {
     <section className="h-screen flex justify-between flex-col-reverse md:flex-row px-20 mt-12">
         <div className="h-120 flex flex-col justify-around">
             <div className="flex items-center gap-2">
-                <img src="./src/assets/img/Group-2.png" />
+                <img src="./public/img/Group-2.png" />
                 <h1 className="text-4xl font-bold">نام آوران اندیشه آرتا</h1>
             </div>
             <ul className="flex flex-col gap-3 text-gray-500">
@@ -30,7 +31,7 @@ const HeroSection = () => {
                     درباره ما
                     <Icon icon="iconamoon:arrow-left-2" width="24" height="24" />
                 </button>
-                <button className="btn mr-4">
+                <button className="btn btn-ghost mr-4">
                     محصولات ما
                     <Icon className="text-primary" icon="iconamoon:arrow-left-2" width="24" height="24" />
                 </button>
@@ -38,11 +39,12 @@ const HeroSection = () => {
         </div>
         <div className="w-full md:w-1/2 relative">
             <span className="absolute left-0">
-                <img src="./src/assets/img/Rectangle.png" width="468px" />
-                <img src="./src/assets/img/Group-1.png" className="absolute top-50 left-13" />
-                <img src="./src/assets/img/circle.png" className="absolute left-30 top-20" />
+                <img src="./public/img/Rectangle.png" width={"440"} />
+                <img src="./public/img/circle.png" className="absolute left-30 top-20" />
             </span>
-            <img src="./src/assets/img/image.png" width={"700"} height={"400"} className="absolute left-28 top-14" />
+            <div className="absolute top-0 left-19 w-full h-full">
+                <ImgSlider />
+            </div>
         </div>
     </section>
   )

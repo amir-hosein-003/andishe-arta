@@ -4,14 +4,16 @@ import Products from "./components/Products"
 import Projects from "./components/Projects"
 
 
+
 const App = () => {
   return (
-    <div className="bg-base-200">
+    <>
       <Navbar />
+      
       <HeroSection />
       <Products />
       <Projects />
-    </div>
+    </>
   )
 }
 

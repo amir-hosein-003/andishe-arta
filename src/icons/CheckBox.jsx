@@ -3,7 +3,7 @@
 const CheckBox = () => {
   return (
     <div>
-      <img src="./src/assets/img/check-square.svg" />
+      <img src="./public/img/check-square.svg" />
     </div>
   )
 }

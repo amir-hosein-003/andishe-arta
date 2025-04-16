@@ -47,7 +47,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="flex items-center justify-center">
-        <img src="./src/assets/img/logo.png" alt="logo" />
+        <img src="./public/img/logo.png" alt="logo" />
       </div>
       <div className="flex items-center justify-end gap-4">
           <div className="flex items-center gap-2 font-yekan">
