@@ -23,7 +23,7 @@ const ImgSlider = () => {
 
   return (
     <>
-      {/* نقطه‌های سفارشی سمت چپ (مثل عکس اصلی) */}
+      {/* نقطه‌های سفارشی سمت چپ  */}
       <div className="absolute top-45 left-[-25px] z-20 flex flex-col gap-2">
         {images.map((_, index) => (
           <button
