@@ -30,8 +30,8 @@ const ImgSlider = () => {
           <button
             key={index}
             onClick={() => handleDotClick(index)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              index === activeIndex ? 'bg-red-500 h-20' : 'bg-red-300'
+            className={`w-2 h-2 rounded-full transition-all duration-300 hover:bg-primary cursor-pointer ${
+              index === activeIndex ? 'bg-primary h-20' : 'bg-red-300'
             }`}
           />
         ))}
