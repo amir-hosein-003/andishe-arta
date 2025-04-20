@@ -4,7 +4,7 @@ import DetailProduct from "./DetailProduct";
 
 const Products = () => {
   return (
-    <section className="px-20">
+    <section className="px-20 mt-16 md:mt-0">
       <div className="flex justify-center">
         <div className="flex flex-col items-end">
           <img src="./public/img/Group-3.png" width="100px" />

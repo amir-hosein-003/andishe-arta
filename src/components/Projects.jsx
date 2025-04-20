@@ -5,8 +5,8 @@ const Projects = () => {
   const projects = [1, 2, 3, 4];
 
   return (
-    <section className="px-20">
-        <div className="flex justify-center mt-32">
+    <section className="px-20 mt-32">
+        <div className="flex justify-center">
             <div className="flex flex-col items-end">
                 <img src="./public/img/Group-3.png" />
                 <h2 className="text-3xl font-semibold py-2">
@@ -15,17 +15,17 @@ const Projects = () => {
                 </h2>
             </div>
         </div>
-        <div className="grid grid-cols-2 justify-items-center gap-y-8 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center gap-8 mt-16">
 
           {projects.map((num, index) => (
-            <div key={index} className="w-165 h-45 flex flex-row gap-3 rounded-3xl p-5 bg-base-200">
+            <div key={index} className="flex flex-col md:flex-row gap-3 rounded-3xl p-5 bg-base-200">
               <div className="rounded-2xl overflow-hidden">
                 <img src="../public/img/image-2.png" width="320" />
               </div>
               <div className="flex flex-col justify-between">
                 <h3 className="text-xl font-bold">پروژه لورم ایپسوم متن ساختگی</h3>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است...</p>
-                <div className="flex items-center justify-between">
+                <p className="mt-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است...</p>
+                <div className="flex flex-col md:flex-row  md:items-center justify-between gap-3 mt-4">
                   <span className="flex items-center gap-1">
                     <Icon icon="fluent:location-24-filled" width="24" height="24" />
                     نام شرکت

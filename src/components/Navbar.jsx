@@ -36,7 +36,7 @@ const Navbar = () => {
       </div>
     </nav>
     {/* desktop navbar */}
-    <nav className="h-20 grid-cols-3 gap-6 px-20 mt-12 hidden md:grid">
+    <nav className="h-20 grid-cols-3 gap-6 px-20 pt-12 hidden md:grid">
       <div className="flex items-center">
         <ul className="flex items-center justify-between w-full text-gray-500">
             <li><a href="#" className="text-black border-b-3 border-primary py-1">صفحه اصلی</a></li>
