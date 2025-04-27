@@ -11,7 +11,7 @@ export default function Form() {
   console.log(errors);
 
   return (
-    <section className="flex flex-row items-center justify-center gap-34 px-20 mt-32">
+    <section className="flex flex-row items-center justify-center gap-34 px-20 my-32">
       <div>
         <div className="flex flex-col items-start gap-5">
             <div className="flex flex-col items-end gap-2">
