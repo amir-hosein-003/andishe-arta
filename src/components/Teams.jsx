@@ -18,11 +18,9 @@ const Teams = () => {
     { id: 5, name: "محمد اقبال" },
     { id: 6, name: "محمد اقبال" },
     { id: 7, name: "محمد اقبال" },
-    { id: 8, name: "محمد اقبال" },
-    { id: 9, name: "محمد اقبال" },
   ];
 
-  const images = [1, 2, 3, 4, 5, 6];
+  const pageNum = [1, 2, 3, 4];
 
   const swiperRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -34,26 +32,11 @@ const Teams = () => {
   };
 
   return (
-    <section className="relative">
-      <div className="absolute top-0 left-25 z-20 flex  gap-2">
-        {images.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => handleDotClick(index)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 hover:bg-primary cursor-pointer ${
-              index === activeIndex ? "bg-primary w-20" : "bg-red-300"
-            }`}
-          />
-        ))}
-      </div>
-
+    <section className="relative font-yekan py-32">
       <Swiper
         modules={[Pagination]}
         spaceBetween={30}
         slidesPerView={4}
-        pagination={{
-          clickable: true,
-        }}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
         className=""
@@ -64,7 +47,7 @@ const Teams = () => {
               <img src="./public/img/profile.png" alt="profile" />
               <h3 className="text-2xl font-bold"> {user.name} </h3>
               <p>مدیریت راه آهن میعاد</p>
-              <p>
+              <p className="text-gray-400">
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
                 استفاده از طراحان گرافیک است لورم ایپسوم متن ساختگی با تولید
                 سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
@@ -73,6 +56,18 @@ const Teams = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+
+      <div className=" z-20 flex justify-center gap-2 my-10">
+        {pageNum.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => handleDotClick(index)}
+            className={`w-2 h-2 rounded-full transition-all duration-300 hover:bg-primary cursor-pointer ${
+              index === activeIndex ? "bg-primary w-20" : "bg-red-300"
+            }`}
+          />
+        ))}
+      </div>
     </section>
   );
 };

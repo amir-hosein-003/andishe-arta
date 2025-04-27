@@ -5,12 +5,13 @@ import Projects from "./components/Projects"
 import Form from "./components/Form"
 import Introduction from "./components/Introduction"
 import Teams from "./components/Teams"
+import Footer from "./components/Footer"
 
 
 
 const App = () => {
   return (
-    <div className="bg-base-300">
+    <div className="bg-base-300 font-yekan">
       <Navbar />
       <HeroSection />
       <Products />
@@ -18,6 +19,7 @@ const App = () => {
       <Form />
       <Introduction />
       <Teams />
+      <Footer />
     </div>
   )
 }
